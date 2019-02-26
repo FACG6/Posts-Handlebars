@@ -7,4 +7,5 @@ const runBuild = () => {
     connection.query(sql, () => { console.log('database is build successfully');
     })
 }
+runBuild();
 module.exports = runBuild;
