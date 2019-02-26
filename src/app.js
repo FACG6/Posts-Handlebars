@@ -23,7 +23,7 @@ app.engine(
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.serveStatic(path.join(__dirname, "..", "public")));
+app.use(express.servestatic(path.join(__dirname, "..", "public")));
 app.use(controllers);
 
 app.listen(port, () => console.log(`Server is up on port: ${app.get("port")}`));
