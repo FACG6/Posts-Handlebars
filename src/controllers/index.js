@@ -11,9 +11,10 @@ const addPost = require("./addPost.js");
 router.get("/", home.get);
 router.get("/profile", profile.get);
 router.get("/signup", signup.get);
+router.get("/signin", signin.get);
 router.post("/signup", signup.post);
 router.post("/signin", signin.post);
-router.post("/add-post", addPost.post);
+// router.post("/add-post", addPost.post);
 
 router.use(error.client);
 router.use(error.server);

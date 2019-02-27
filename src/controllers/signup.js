@@ -10,7 +10,8 @@ exports.get = (request, response) => {
 exports.post = (request, response) => {
   const userData = request.body;
   getUser(userData.email).then(result => {
-    if (result.length === 0) {
+    // console.log("111111111111", result);
+    if (result.rows.length === 0) {
       bcrypt
         .genSalt(5)
         .then(salt => {
