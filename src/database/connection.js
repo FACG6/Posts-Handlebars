@@ -1,6 +1,6 @@
 const { Pool } = require('pg');
 const url = require('url');
-require('env2')('./config.env');
+require('env2')('config.env');
 let dbURL = process.env.DATABASE_URL;
 const params = url.parse(dbURL);
 const [userName, password] = params.auth.split(':');
