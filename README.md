@@ -18,6 +18,9 @@ Our website is a public postting website. Through our website you can add your p
 - we made the sign-up, log-in, sign-out pages.
 - We made the all necessary files.
 
+## Database Schema
+![database](public/images/schema.png)
+
 ## How to use
 
 Run this project on your Local Machine

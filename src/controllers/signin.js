@@ -8,7 +8,7 @@ exports.get = (req, res) => {
     'button-value': 'signUP',
     link: '/signup',
     js: '',
-    css: '',
+    css: 'signin',
   });
 };
 
@@ -25,7 +25,9 @@ exports.post = (req, res) => {
               };
               const token = jwt.sign(user, process.env.SECRET);
               res.cookie('jwt', token, { maxAge: 1000*60*60*24*30 });
-              res.redirect('/profile');
+              res.redirect('/profile',{
+                css: 'signin',
+              });
             }else{
               res.render('signin', { msg: "password is wrong " })
             }
