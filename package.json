@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/database/build.js && node src/app.js",
-    "start:watch": "nodemon src/app.js",
+    "start": "node src/database/build.js && node src/index.js",
+    "start:watch": "nodemon src/index.js",
     "test": "tape test/database.test.js | tap-spec && tape test/server.test.js | tap-spec"
   },
   "repository": {
@@ -27,8 +27,10 @@
     "tape": "^4.10.1"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
     "env2": "^2.2.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "express-session": "^1.15.6",
