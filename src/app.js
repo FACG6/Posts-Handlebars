@@ -28,8 +28,4 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(controllers);
 
-app.listen(app.get("port"), () =>
-  console.log(`Server is up on port: ${app.get("port")}`)
-);
-
 module.exports = app;
