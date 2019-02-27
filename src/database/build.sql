@@ -16,6 +16,7 @@ CREATE TABLE posts(
 );
 INSERT INTO users(first_name,last_name,email,password) VALUES
 ('AYMAN','ALQOUQA','AY@QO','12'),
+('asd', 'reff', 'asd@asd.com', '$2a$05$4ZI8rNE53KoLw40vBYKzcO1CUKICCKO7LkEfbQ.Gjk0mNKV20Rycu'),
 ('AHMED','ABED','AH@ABED','32');
 
 INSERT INTO posts(post,user_id) VALUES
