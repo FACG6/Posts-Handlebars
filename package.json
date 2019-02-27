@@ -24,10 +24,10 @@
     "istanbul": "^0.4.5",
     "supertest": "^3.4.2",
     "tap-spec": "^5.0.0",
-    "tape": "^4.10.1",
-    "env2": "^2.2.2"
+    "tape": "^4.10.1"
   },
   "dependencies": {
+    "env2": "^2.2.2",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.4",
