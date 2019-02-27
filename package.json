@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/database/build.js && node src/index.js",
     "start:watch": "nodemon src/index.js",
-    "test": "tape test/database.test.js | tap-spec && tape test/server.test.js | tap-spec"
+    "test": "tape test/database.test.js | tap-spec"
   },
   "repository": {
     "type": "git",
