@@ -4,6 +4,7 @@ const hbs = require("express-handlebars");
 const bodyParser = require("body-parser");
 const path = require("path");
 const controllers = require("./controllers/index.js");
+const cookieParser = require("cookie-parser");
 
 const app = express();
 
@@ -23,11 +24,8 @@ app.engine(
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(controllers);
-
-app.listen(app.get("port"), () =>
-  console.log(`Server is up on port: ${app.get('port')}`)
-);
 
 module.exports = app;
