@@ -1,0 +1,9 @@
+<form action="/add-post" method="post" class="sendPost-form">
+    <textarea name="post-area" class="post-area" cols="50" rows="20" placeholder="Enter your thoughts"></textarea>
+    <input type="submit" value="Post">
+</form>
+<div class="posts-div">
+    {{#each posts}}
+    <div class="post">{{this}}</div>
+    {{/each}}
+</div>
