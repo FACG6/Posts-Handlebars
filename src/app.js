@@ -23,12 +23,22 @@ app.engine(
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+<<<<<<< HEAD
 app.use(cookieParser());
+=======
+>>>>>>> 9bf8e2100c69bf48d0a38c7565d5c7766c2e904f
 app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(controllers);
 
 app.listen(app.get("port"), () =>
+<<<<<<< HEAD
   console.log(`Server is up on port: ${app.get("port")}`)
 );
 
 module.exports = app;
+=======
+  console.log(`Server is up on port: ${app.get('port')}`)
+);
+
+module.exports = app;
+>>>>>>> 9bf8e2100c69bf48d0a38c7565d5c7766c2e904f
