@@ -1,12 +1,14 @@
 <section >
-    <form action="/signin" method="post" novalidate>
-    <label class="ff" for="email"> Enter email:
+    <form class="form-style" action="/signin" method="post" >
+     <div class="container">
+         <label class="label" for="email"> Enter email:
         <input type="email" name="email" id="email" required>
-    </label><br>
-    <label for="password"> Enter password:
+    </label>
+    <label class="label" for="password"> Enter password:
         <input type="password" name="password" id="password" required>
     </label>
-    <button type="submit" name="submit">Submit</button>
+    <button type="submit" name="submit" class="submit-btn">Submit</button>
     <span>{{msg}}</span>
+     </div>
     </form>
 </section>

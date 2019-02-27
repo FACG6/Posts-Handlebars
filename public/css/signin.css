@@ -3,3 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.form-style{
+    color: #00000;
+    width: 50%;
+    margin: 0 auto;
+    background-color:#efa1a1;
+    border-radius: 10px;
+}
+.label{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.submit-btn{
+    margin-top: 10px;
+    width:20%;
+    color: #eeeee;
+    margin-bottom: 20px;
+    background-color: #c5c5c5;
+    
+}
+#email, #password {
+    width: 60%; 
+    outline-color: blueviolet;
+}
+.container{
+    padding: 40px;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
