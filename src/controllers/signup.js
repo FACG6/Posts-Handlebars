@@ -4,7 +4,12 @@ const addUser = require("./../model/addUser.js");
 const getUser = require("../model/getUser");
 
 exports.get = (request, response) => {
-  response.render("signup", { js: "signup", css: "signup" });
+  response.render("signup", {
+    "button-value": "Sign In",
+    link: "/signin",
+    js: "signup",
+    css: "signup"
+  });
 };
 
 exports.post = (request, response) => {

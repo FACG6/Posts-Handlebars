@@ -1,4 +1,9 @@
 <nav class="nav">
     <span class="logo">Posts-Handlebars</span>
-    <button onclick="window.location.href='{{link}}'">{{button-value}}</button>
+    {{#if link}}
+    <button onclick="window.location.href='{{link}}'" , class="sign-btn">{{button-value}}</button>
+    {{else}}
+    <button onclick="fetch('/logout').then(() => window.location.href = '/signin')" ,
+        class="sign-btn">{{button-value}}</button>
+    {{/if}}
 </nav>
