@@ -6,7 +6,12 @@ exports.get = (req, res, next) => {
     else
       getPosts()
         .then(result => {
-          res.render("home", { posts: result.rows, css: "profile", js: "profile" });
+          res.render("home", {
+            posts: result.rows,
+            css: "profile",
+            js: "profile",
+            "button-value": "logout"
+          });
         })
         .catch(err => {
           next(err);
